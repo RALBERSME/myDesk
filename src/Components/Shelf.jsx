@@ -1,5 +1,6 @@
 import React from "react";
 import "./Shelf.css";
+import shelf from "../assets/shelf.png";
 const Shelf = ({
   onShowDarling,
   onShowCalendar,
@@ -66,10 +67,7 @@ const Shelf = ({
           </div>
         </div>
       </div>
-      <img
-        id="shelf"
-        src="https://cdn.pixabay.com/photo/2014/12/21/23/48/shelf-576089_640.png"
-      ></img>
+      <img id="shelf" src={shelf}></img>
     </>
   );
 };

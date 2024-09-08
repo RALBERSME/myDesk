@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Bar.css";
-
+import refrigerator from "../assets/refrigerator.png";
+import fridge from "../assets/fridge.jpg";
+import Kuehlschrank from "../assets/Kuehlschrank.png";
+import restaurant from "../assets/restaurant.png";
 const Bar = ({ onCloseBar }) => {
   const [showCocktailbar, setShowCocktailbar] = useState(false);
   const [showDrink, setshowDrink] = useState(false);
@@ -48,24 +51,12 @@ const Bar = ({ onCloseBar }) => {
   return (
     <div className="barModule">
       <div className="fridge" id="fridgeInside">
-        <img
-          width="300px"
-          height="200px"
-          src="https://cdn.pixabay.com/photo/2014/06/01/14/39/refrigerator-359615_640.jpg"
-        />
-        <img
-          width="300px"
-          height="200px"
-          src="https://cdn.pixabay.com/photo/2022/06/08/21/42/fridge-7251301_640.jpg"
-        />
+        <img width="300px" height="200px" src={refrigerator} />
+        <img width="300px" height="200px" src={fridge} />
         <p id="order">Maybe better a cocktail.</p>
       </div>
       <div className="fridge" id="fridgeOutside" onMouseEnter={openBar}>
-        <img
-          width="350px"
-          height="650px"
-          src="https://cdn.pixabay.com/photo/2019/02/01/06/36/graphic-3968479_640.png"
-        />
+        <img width="350px" height="650px" src={Kuehlschrank} />
       </div>{" "}
       {showDrink && (
         <div id="cocktailbar2">
@@ -82,10 +73,7 @@ const Bar = ({ onCloseBar }) => {
           <p id="orderDrink" onClick={orderDrink}>
             order drink
           </p>
-          <img
-            id="barRoom"
-            src="https://cdn.pixabay.com/photo/2016/03/31/18/00/restaurant-1294064_640.png"
-          ></img>
+          <img id="barRoom" src={restaurant}></img>
         </div>
       )}
       <button id="leaveBar" onClick={onCloseBar}>

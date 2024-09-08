@@ -17,7 +17,7 @@ const News = ({ onCloseNews }) => {
     const fetchNews = async () => {
       try {
         const url = `https://saurav.tech/NewsAPI/top-headlines/category/${category}/in.json`;
-        // const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&apikey=9c404c552f6102517c9c531e4d8475da`;
+
         const response = await axios.get(url);
 
         const fetchedNews = response.data.articles;

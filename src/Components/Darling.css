@@ -14,7 +14,7 @@
 #frame {
   height: 90%;
   margin-top: 25%;
-  background-image: url("https://cdn.pixabay.com/photo/2019/09/16/12/24/cat-4480848_640.jpg");
+  background-image: url("../assets/cat.jpg");
   background-position: 60% 40%;
   background-size: 100% 88%;
   background-repeat: no-repeat;

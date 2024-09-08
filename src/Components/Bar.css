@@ -16,9 +16,7 @@
 .fridge {
   position: absolute;
 }
-/* button {
-  margin-left: 120%;
-} */
+
 #fridgeOutside:hover {
   transform: rotateY(0deg);
   transform-origin: left;

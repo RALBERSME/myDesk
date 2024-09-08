@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./Darling.css";
+import dog from "../assets/dog.jpg";
+import saltyDog from "../assets/salty-dog.png";
+import frame from "../assets/frame.png";
 import axios from "axios";
 const Darling = ({ onCloseDarling }) => {
   const [catFact, setCatFact] = useState("Cats are very clever!");
-  const [dogPic, setDogPic] = useState(
-    "https://cdn.pixabay.com/photo/2017/08/12/00/45/pet-2633165_640.jpg"
-  );
+  const [dogPic, setDogPic] = useState(`${dog}`);
   const fetchCatFacts = async () => {
     try {
       const url = `https://catfact.ninja/fact`;
@@ -35,18 +36,13 @@ const Darling = ({ onCloseDarling }) => {
         "“My cats inspire me daily. They inspire me to get a dog!”  - Greg Curtis";
       document.getElementById("clickForFacts").style.display = "none";
     } catch {
-      setDogPic(
-        "https://cdn.pixabay.com/photo/2015/07/04/21/59/salty-dog-831762_640.jpg"
-      );
+      setDogPic(`${saltyDog}`);
     }
   };
 
   return (
     <div className="darlingModule">
-      <img
-        id="frame"
-        src="https://cdn.pixabay.com/photo/2016/10/12/09/37/photo-frame-1733943_640.png"
-      ></img>
+      <img id="frame" src={frame}></img>
       <div id="infoCat">
         <span id="message">{catFact}</span>
         <button id="clickForFacts" onClick={fetchCatFacts}>

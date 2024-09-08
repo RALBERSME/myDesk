@@ -8,7 +8,7 @@
   height: 50%;
   width: 100vmin;
   aspect-ratio: 3/2;
-  background: url("https://cdn.pixabay.com/photo/2017/06/10/07/22/news-2389226_640.png");
+  background: url("../assets/news.png");
   color: white;
 }
 marquee {

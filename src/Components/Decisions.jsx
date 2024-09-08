@@ -2,17 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./News.css";
 import axios from "axios";
 import "./Decisions.css";
+import ask from "../assets/ask.jpg";
 const Decisions = ({ onCloseDecisions }) => {
   const [decision, setDecision] = useState("");
-  const [decisionUrl, setDecisionUrl] = useState(
-    "https://cdn.pixabay.com/photo/2017/05/24/22/57/ask-2341784_640.jpg"
-  );
+  const [decisionUrl, setDecisionUrl] = useState(`${ask}`);
   const [inputText, setInputText] = useState("");
 
   const resetFields = () => {
-    setDecisionUrl(
-      "https://cdn.pixabay.com/photo/2017/05/24/22/57/ask-2341784_640.jpg"
-    );
+    setDecisionUrl(`${ask}`);
     setInputText("");
     setDecision("");
     document.getElementById("resetBtn").textContent =
