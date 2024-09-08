@@ -1,0 +1,79 @@
+.jobModule {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100vmin;
+  aspect-ratio: 3/2;
+  background-color: black;
+  color: white;
+}
+.jobContainer {
+  margin-top: 40%;
+  width: 100%;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.75rem;
+}
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  gap: 5%;
+  width: 100%;
+}
+.item {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15%;
+}
+input[type="radio"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+}
+.industry {
+  margin-left: 15%;
+}
+#searchJobBtn {
+  margin-left: 10rem;
+  color: orange;
+  border: 2px solid orange;
+  box-shadow: 2px 2px 2px 2px orange;
+  cursor: pointer;
+}
+#searchJobBtn:hover {
+  transform: scale(0.9);
+}
+.showJobs {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  height: 30rem;
+  width: 80rem;
+  padding: 25px;
+  overflow-y: scroll;
+  z-index: 8;
+}
+.showJobs::-webkit-scrollbar {
+  background: rgb(252, 236, 205);
+}
+.showJobs::-webkit-scrollbar-thumb {
+  background: rgb(251, 206, 123);
+}
+
+.showJobs::-webkit-scrollbar-thumb:hover {
+  background: rgb(242, 198, 115);
+}
+.jobDesign {
+  color: rgb(245, 214, 157);
+}
+#leaveJobPage {
+  border-radius: 40%;
+  width: 5rem;
+  height: 3rem;
+  margin-top: -10%;
+}
