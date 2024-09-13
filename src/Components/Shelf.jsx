@@ -4,7 +4,7 @@ import shelf from "../assets/shelf.png";
 const Shelf = ({
   onShowDarling,
   onShowCalendar,
-  onShowJob,
+  onShowPoetry,
   onShowDecisions,
   onShowBar,
   onShowNews,
@@ -23,10 +23,10 @@ const Shelf = ({
         </div>
         <div className="book">
           <div className="side">
-            <span className="title">Job Offers</span>
+            <span className="title">Poetry</span>
           </div>
           <div className="top"></div>
-          <div id="book2" className="cover" onClick={onShowJob}>
+          <div id="book2" className="cover" onClick={onShowPoetry}>
             click here
           </div>
         </div>

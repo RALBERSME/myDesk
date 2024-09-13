@@ -4,7 +4,7 @@ import Lamp from "./Lamp";
 import "./Desk.css";
 import Darling from "./Darling";
 import Calendar from "./Calendar";
-import Job from "./Job";
+import Poetry from "./Poetry";
 import Bar from "./Bar";
 import News from "./News";
 import Decisions from "./Decisions";
@@ -15,7 +15,7 @@ const Desk = () => {
   const [showDarling, setShowDarling] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
   const [showDecisions, setShowDecisions] = useState("");
-  const [showJob, setShowJob] = useState(false);
+  const [showPoetry, setShowPoetry] = useState(false);
   const [showNews, setShowNews] = useState(false);
   const [showBar, setShowBar] = useState(false);
 
@@ -34,7 +34,7 @@ const Desk = () => {
           onShowCalendar={() => setShowCalendar(true)}
           onShowBar={() => setShowBar(true)}
           onShowNews={() => setShowNews(true)}
-          onShowJob={() => setShowJob(true)}
+          onShowPoetry={() => setShowPoetry(true)}
           onShowDecisions={() => setShowDecisions(true)}
         />
       )}
@@ -54,17 +54,17 @@ const Desk = () => {
           }}
         />
       )}
-      {showJob && (
-        <Job
-          onCloseJob={() => {
-            setShowJob(false);
+      {showPoetry && (
+        <Poetry
+          onClosePoetry={() => {
+            setShowPoetry(false);
             setLightOn(true);
           }}
         />
       )}
       {!showDarling &&
         !showCalendar &&
-        !showJob &&
+        !showPoetry &&
         !showDecisions &&
         !showBar &&
         !showNews && (
